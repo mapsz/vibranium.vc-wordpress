@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+  <style>
+    /* body{
+      font-family: 'ABC Favorit Pro';
+    } */
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+    .main-color{
+      background-color: #2A4E5F !important;
+    }
+    .navbar {
+      background-color: transparent !important;
+      height: 80px;
+      color: white;
+    }
+    .navbar-brand, .nav-link {
+      color: white;
+    }
+    .navbar.scrolled{
+      background-color: black !important;
+    }
+    .navbar-collapse{
+      background-color: black !important;
+      padding: 15px;
+      text-align: right;
+    }
+
+    .btn{
+      border-radius: 50px;
+    }
+
+    .welcome{
+      padding-top: 80px !important;
+    }
+
+    .p-40{
+      padding:40px;
+    }
+
+    @media (min-width: 768px) {
+      .program-online-free-container .inner-container{
+        max-width: 660px;
+        font-size: 27px;
+        margin-left: 15%;
+      }
+    }
+    .program-online-free-container .inner-container{
+      line-height: 140%;
+    }
+
+    .navbar-skip{
+      padding-top:80px;
+    }
+
+    .main-container .inner-container{
+      background-image: url('img/softlanding-main-mobile.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      height: 680px;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .main-container .inner-container{
+        background-image: url('img/softlanding-main-desktop.png');
+        height: 1200px;
+      }
+      .main-container .main-text{
+        font-size: 64px;
+        line-height: 95%;
+        max-width: 660px;
+        margin-left: 15%;
+      }
+    }
+
+  </style>
+
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-xxl">
+
+      <a class="navbar-brand" href="#">
+
+        <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M36.68 8H29.75L33.21 2L34.36 0H4.62L9.24 8H0L13.72 31.76L14.87 33.76L16.02 31.76L19.48 25.76L22.94 31.76L24.09 33.76L25.24 31.76L37.81 10L38.96 8H36.65H36.68ZM8.08 2H30.9L27.44 8H11.55L8.09 2H8.08ZM14.87 29.76L3.46 10H10.39L18.34 23.76L14.88 29.76H14.87ZM12.7 10H26.28L19.49 21.76L12.7 10ZM24.11 29.76L20.65 23.76L28.6 10H35.53L24.12 29.76H24.11Z" fill="white"/>
+        </svg>
+        <span>VIBRANIUM</span>
+        <span style="color:#606A6F">.VC</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Approach</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-light" href="#">Apply</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="main-container container-fluid p-0">
+    <div class="inner-container">
+
+      <div class="navbar-skip"></div>
+
+      <div class="container-xxl mt-md-5 pt-md-5">
+        <div class="main-text">
+          <span>
+            Relocate your startup to the US with the helpof the best Silicon Valley experts
+          </span>
+          <span class="text-light">
+            — Vibranium SoftLanding Program
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+        <!-- <img src="img/softlanding-main-desktop.png" alt=""> -->
+
+
+  </div>
+
+
+
+  <!-- The program is 100% online and free -->
+  <div style="background-color:#040615">
+    <div class="program-online-free-container container-xxl py-4 py-md-5 px-3 px-md-5 text-light">
+      <div class="inner-container">
+        <p class="mb-4 mt-md-5">
+          The program is 100% online and free.
+        </p>
+        <p class="mb-4 mb-md-5">
+          We look for ambitious, hard-working, and determined startups to help them relocate, get the product-market fit, and raise funds in the US.
+        </p>
+        <div class="mb-md-5">
+          <button class="btn btn-light px-4">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SoftLanding Program is for you if you are -->
+  <div style="background-color:#B0B6B9">
+    <div class="container-xxl pt-5">
+      <div class="pt-5 border-top border-dark">
+        <div class="row">
+          <div class="col-12 col-md-6 pb-4">
+            <h3 class="text-bold">SoftLanding Program is for you if you are:</h3>
+          </div>
+          <div class="col-12 col-md-6">
+            <ul class="mb-0">
+              <li class="mb-4">A fast-growing IT (B2B SaaS) company</li>
+              <li class="mb-4">An operating business with regular sales</li>
+              <li class="mb-4">A startup with global ambitions to grow to $100M ARR in 5 years</li>
+              <li class="mb-4">A team of 5+ talents, at least one of whom is fluent in English</li>
+              <li class="mb-4">Selling your product in other markets</li>
+              <li>Planning to move to the US within 6 months after the program</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- You should apply if you -->
+  <div style="background-color:#B0B6B9">
+    <div class="container-xxl py-5">
+      <div class="pt-5 border-top border-dark">
+        <div class="row">
+          <div class="col-12 col-md-6 pb-4">
+            <h3>You should apply if you:</h3>
+          </div>
+          <div class="col-12 col-md-6">
+            <ul class="mb-0">
+              <li class="mb-4">Want to relocate your business to the US and grow your company in the US market</li>
+              <li class="mb-4">Are ready to follow step-by-step recommendations from our experts</li>
+              <li class="mb-4">Are willing to put your time and effort into the program (4-8 hours a week)</li>
+              <li class="mb-4">Plan to fundraise from US investors</li>
+              <li class="">Want to make it to one of the top accelerators</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Whats next -->
+  <div class="container-xxl">
+    <div class="pt-5">
+      <h1 class="mb-5">I'm in. What's next?</h1>
+      <div class="row">
+
+        <div class="col-12 col-md-3 border-0 px-4 mb-3 mb-md-0">
+          <div class="bg-secondary-subtle p-40" style="height: 310px;">
+            <span style="
+              font-size: 64px;
+              font-weight: 500;
+              line-height: 65%;"
+            >
+              1
+            </span>
+            <p class="card-text mt-2">
+              Apply online
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 border-0 px-4 mb-3 mb-md-0">
+          <div class="bg-secondary-subtle p-40" style="height: 310px;">
+            <span style="
+              font-size: 64px;
+              font-weight: 500;
+              line-height: 65%;"
+            >
+              2
+            </span>
+            <p class="card-text mt-2">
+              Wait for the organizers' decision to accept you
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 border-0 px-4 mb-3 mb-md-0">
+          <div class="bg-secondary-subtle p-40" style="height: 310px;">
+            <span style="
+              font-size: 64px;
+              font-weight: 500;
+              line-height: 65%;"
+            >
+              3
+            </span>
+            <p class="card-text mt-2">
+              Take an active part in the BootCamp
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 border-0 px-4 mb-3 mb-md-0">
+          <div class="bg-secondary-subtle p-40" style="height: 310px;">
+            <span style="
+              font-size: 64px;
+              font-weight: 500;
+              line-height: 65%;"
+            >
+              4
+            </span>
+            <p class="card-text mt-2">
+              If you are selected for the Pre Accelerator, put your time and effort into relocating to the US
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 mt-4 mt-md-5">
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-dark px-4">Apply</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Program -->
+  <div class="container-xxl mb-5">
+    <div class="mt-5 pt-5 border-top border-dark">
+      <div class="row">
+        <div class="col-12 col-md-6 pb-4">
+          <h1>Program</h1>
+        </div>
+        <div class="col-12 col-md-6">
+          <ul class="mb-0">
+            <li class="mb-4">Founding legal entity: Types of legal entities, pros and cons, step-by-step instructions</li>
+            <li class="mb-4">Banking and financials in the US: Business and personal banking, credit scores, loans, and other financial tools</li>
+            <li class="mb-4">Obtaining a visa and long term goals: Types of visas, visa process, interview preparation, required documents, change of status, relocation of team members, visa sponsorship</li>
+            <li class="mb-4">Value proposition and product-market fit: Adaptation of the value proposition for external market expansion of a product</li>
+            <li class="mb-4">PR tools and best practices for your startup</li>
+            <li class="mb-4">Marketing strategy in the US</li>
+            <li class="mb-4">HR and team relocation</li>
+            <li class="mb-4">Financial planning of the expansion</li>
+            <li class="mb-4">Negotiations with investors: Structure, terms, and conditions</li>
+            <li class="mb-4">Networking and events in the US</li>
+            <li class="mb-4">Fundraising strategy and tools</li>
+            <li class="mb-4">Pitching Gym</li>
+            <li class="">Demo day</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background-color:#B0B6B9">
+    <div class="container-xxl pt-5" >
+      <div class="row">
+        <div class="col-12 col-md-6 p-3">
+          <div class="row">
+            <div class="col-12">
+              <svg width="138" height="120" viewBox="0 0 156 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M146.72 16H9.24023L13.8402 24L73.3602 127.08L77.9602 135.08L82.5602 127.08L142.12 24L146.72 16ZM77.9602 119.08L23.0802 24H132.88L78.0002 119.08H77.9602Z" fill="#040615" fill-opacity="0.3"/>
+                <path d="M146.72 32H119L132.84 8L137.44 0H18.48L36.96 32H0L54.88 127.04L59.48 135.04L64.08 127.04L77.92 103.04L91.76 127.04L96.36 135.04L100.96 127.04L151.24 40L155.84 32H146.6H146.72ZM32.32 8H123.6L109.76 32H46.2L32.36 8H32.32ZM59.48 119.04L13.84 40H41.56L73.36 95.04L59.52 119.04H59.48ZM50.8 40H105.12L77.96 87.04L50.8 40ZM96.44 119.04L82.6 95.04L114.4 40H142.12L96.48 119.04H96.44Z" fill="#040615"/>
+              </svg>
+
+
+            </div>
+            <div class="col-12 col-md-6">
+              <p class="mt-3">
+                Vibranium is a Silicon Valley-based venture fund that focuses on startups with global ambitions. We provide seed-stage funding to technologically advanced IT solutions based on B2B SaaS business models.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-5">
+              <h2 class="mb-4">Our portfolio</h2>
+              <a href="#">Everytale </a> <br>
+              <a href="#">MR NET</a> <br>
+              <a href="#">Otis</a> <br>
+              <a href="#">IVM Market</a> <br>
+              <a href="#">iSchoolConnect </a> <br>
+              <a href="#">PicUP</a>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mb-5">
+                <h2 class="mb-4">Media</h2>
+                <a href="#">News</a> <br>
+                <a href="#">Faces</a> <br>
+                <a href="#">Venture Hacks</a>
+              </div>
+              <div class="mb-5">
+                <h2 class="mb-4">Address</h2>
+                <p>
+                  101 Jefferson Drive <br>
+                  Menlo Park <br>
+                  CA, 94025
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-5 border-dark border-top">
+        <div class="col-12 col-md-6">
+          <div class="d-md-inline mr-5">
+            <a href="#">AML Policy</a>
+          </div>
+          <div class="d-md-inline mx-md-3">
+            <a href="#">Sanctions Policy</a>
+          </div>
+          <div class="d-md-inline">
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-5 mt-md-0 d-md-flex justify-content-end">
+          <div class="d-md-inline">
+            <a href="#">Twitter</a>
+          </div>
+          <div class="d-md-inline mx-md-3">
+            <a href="#">Telegram</a>
+          </div>
+          <div class="d-md-inline">
+            <a href="#">Facebook</a>
+          </div>
+          <div class="d-md-inline mx-md-3">
+            <a href="#">Linkedin</a>
+          </div>
+          <div class="d-md-inline">
+            <a href="#">Medium</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+
+<script>
+  $(window).scroll(function(){
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+  });
+</script>
+
+</html>
