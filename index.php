@@ -115,6 +115,9 @@
       margin-top:40px;
       margin-bottom:40px;
     }
+    .mr-40{
+      margin-right:40px;
+    }
 
     @media (min-width: 768px) {
       .program-online-free-container .inner-container{
@@ -153,6 +156,28 @@
       }
     }
 
+    .venture-hacks-card:first-child {
+      margin-left: 160px !important;
+    }
+
+    .venture-hacks-carusel{
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .venture-hacks-carusel::-webkit-scrollbar{
+      display: none;
+    }
+
+    .carusel-button{
+      position: absolute;
+      top: 220px;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .carusel-button-right{
+      right: 0px;
+    }
+
   </style>
 
 
@@ -167,8 +192,6 @@
         </svg>
         <span>VIBRANIUM</span>
         <span style="color:#606A6F">.VC</span>
-
-        <?php echo 'php test';?>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -392,6 +415,63 @@
 
   </div>
 
+
+  <!-- Venture Hacks -->
+  <div class="container-xxl mt-5 pb-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-between mb-5 pb-0 pb-md-5 ">
+          <h2>
+            Venture Hacks
+          </h2>
+          <a class="text-secondary px-4" href="#">
+            All venture hacks
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="venture-hacks-carusel-container">
+
+      <div style="position: relative;">
+        <div class="carusel-button carusel-button-left">
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.7">
+              <circle cx="30" cy="30" r="30" fill="#B0B6B9" fill-opacity="0.5"/>
+              <path d="M28.5 24L22.5 30L28.5 36" stroke="black" stroke-width="2" stroke-linecap="round"/>
+              <line x1="23" y1="30" x2="36" y2="30" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+        <div class="carusel-button carusel-button-right">
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.7">
+              <circle cx="30" cy="30" r="30" fill="#B0B6B9" fill-opacity="0.5" transform="rotate(-180 30 30)"/>
+              <path d="M31.5 36L37.5 30L31.5 24" stroke="black" stroke-width="2" stroke-linecap="round"/>
+              <line x1="37" y1="30" x2="24" y2="30" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="venture-hacks-carusel d-flex flex-row flex-nowrap overflow-auto m-0">
+        <?php for ($i=0; $i < 12; $i++) : ?>
+          <div class="venture-hacks-card card mr-40" style="min-width: 400px; min-height: 500px;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        <?php endfor ?>
+      </div>
+
+    </div>
+
+  </div>
+
+
   <!-- Footer -->
   <footer style="background-color:#B0B6B9">
     <div class="container-xxl pt-5" >
@@ -483,6 +563,21 @@
   $(window).scroll(function(){
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
   });
+
+  $('.venture-hacks-carusel-container .carusel-button-left').click(function() {
+    event.preventDefault();
+    $('.venture-hacks-carusel').animate({
+      scrollLeft: "-=775px"
+    }, "slow");
+  });
+
+ $('.venture-hacks-carusel-container .carusel-button-right').click(function() {
+    event.preventDefault();
+    $('.venture-hacks-carusel').animate({
+      scrollLeft: "+=775px"
+    }, "slow");
+  });
+
 </script>
 
 </html>
