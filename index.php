@@ -456,12 +456,10 @@
 
       <div class="venture-hacks-carusel d-flex flex-row flex-nowrap overflow-auto m-0">
         <?php for ($i=0; $i < 12; $i++) : ?>
-          <div class="venture-hacks-card card mr-40" style="min-width: 400px; min-height: 500px;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="venture-hacks-card card mr-40 p-40" style="min-width: 400px; min-height: 500px;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <div class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h4 class="card-title">How to Turn a YouTube Channel into a EdTech Startup in 6 Months</h4>
+              <p class="card-text">Founder & CEO of iSchoolConnect talks about launching an EdTech company.</p>
             </div>
           </div>
         <?php endfor ?>
