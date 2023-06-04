@@ -10,192 +10,82 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="sytle.css">
 </head>
 <body>
-
-  <style>
-    @font-face {
-      font-family: "ABC Favorit Regular";
-      src: url(fonts/ABCFavoritPro-Regular.otf) format("truetype");
-    }
-    @font-face {
-      font-family: "ABC Favorit Medium";
-      src: url(fonts/ABCFavoritPro-Medium.otf) format("truetype");
-    }
-    body{
-      font-family: 'ABC Favorit Regular';
-      font-size: 18px;
-      line-height: 140%;
-      margin:0px;
-    }
-    h1{
-      font-family: 'ABC Favorit Medium' !important;
-      font-size: 64px;
-      line-height: 95%;
-    }
-    h2, .h2{
-      font-family: 'ABC Favorit Medium' !important;
-      font-size: 48px;
-      line-height: 95%;
-    }
-    h3{
-      font-family: 'ABC Favorit Medium' !important;
-      font-size: 32px;
-      line-height: 100%;
-    }
-    h4{
-      font-family: 'ABC Favorit Medium' !important;
-      font-size: 18px;
-      line-height: 120%;
-    }
-    p{
-      margin:0px;
-    }
-    @media (min-width: 768px) {
-      body{
-        font-size: 20px;
-      }
-      h1{
-        font-size: 96px;
-      }
-      h2, .h2{
-        font-size: 64px;
-      }
-      h3{
-        font-size: 48px;
-        line-height: 95%;
-      }
-      h4{
-        font-size: 32px;
-        line-height: 100%;
-      }
-    }
-    a{
-      color:black;
-      text-decoration: none;
-    }
-    a:hover{
-      text-decoration: underline;
-    }
-    .main-color{
-      background-color: #2A4E5F !important;
-    }
-    .navbar {
-      background-color: transparent !important;
-      height: 80px;
-      color: white;
-    }
-    .navbar-brand, .nav-link {
-      font-size: 18px !important;
-      color: white;
-    }
-    .navbar.scrolled{
-      background-color: black !important;
-    }
-    @media (max-width: 767px) {
-      .navbar-collapse{
-        background-color: black !important;
-        padding: 15px;
-        text-align: right;
-      }
-    }
-
-    .btn{
-      border-radius: 50px;
-    }
-
-    .welcome{
-      padding-top: 80px !important;
-    }
-
-    .p-40{
-      padding:40px;
-    }
-    .my-40{
-      margin-top:40px;
-      margin-bottom:40px;
-    }
-    .mr-40{
-      margin-right:40px;
-    }
-
-    @media (min-width: 768px) {
-      .program-online-free-container .inner-container{
-        max-width: 660px;
-        font-size: 27px;
-        margin-left: 15%;
-      }
-    }
-    .program-online-free-container .inner-container{
-      line-height: 140%;
-    }
-
-    .navbar-skip{
-      padding-top:80px;
-    }
-
-    .main-container .inner-container{
-      height: 100vh;
-      background-image: url('img/main-mobile.png');
-      background-color: #2A4E5F;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: top;
-      font-weight: 500;
-      line-height: 100%;
-    }
-
-    @media (min-width: 768px) {
-      .main-container .inner-container{
-        background-image: url('img/main-desktop.png');
-      }
-      .main-container .main-text{
-        line-height: 95%;
-        max-width: 436px;
-        margin-left: 15%;
-      }
-    }
-
-    .venture-hacks-card:first-child {
-      margin-left: 160px !important;
-    }
-
-    .venture-hacks-carusel{
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    .venture-hacks-carusel::-webkit-scrollbar{
-      display: none;
-    }
-
-    .carusel-button{
-      position: absolute;
-      top: 220px;
-      cursor: pointer;
-      z-index: 10;
-    }
-    .carusel-button-right{
-      right: 0px;
-    }
-
-  </style>
-
-
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
     <div class="container-xxl">
 
-      <a class="navbar-brand" href="#">
-
-        <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M36.68 8H29.75L33.21 2L34.36 0H4.62L9.24 8H0L13.72 31.76L14.87 33.76L16.02 31.76L19.48 25.76L22.94 31.76L24.09 33.76L25.24 31.76L37.81 10L38.96 8H36.65H36.68ZM8.08 2H30.9L27.44 8H11.55L8.09 2H8.08ZM14.87 29.76L3.46 10H10.39L18.34 23.76L14.88 29.76H14.87ZM12.7 10H26.28L19.49 21.76L12.7 10ZM24.11 29.76L20.65 23.76L28.6 10H35.53L24.12 29.76H24.11Z" fill="white"/>
+      <!-- Brand -->
+      <a class="navbar-brand m-md-0" href="#" style="margin-left: 12px">
+        <svg width="40" height="34" viewBox="0 0 156 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M146.72 16H9.24023L13.8402 24L73.3602 127.08L77.9602 135.08L82.5602 127.08L142.12 24L146.72 16ZM77.9602 119.08L23.0802 24H132.88L78.0002 119.08H77.9602Z" fill="white"/>
+          <path d="M146.72 32H119L132.84 8L137.44 0H18.48L36.96 32H0L54.88 127.04L59.48 135.04L64.08 127.04L77.92 103.04L91.76 127.04L96.36 135.04L100.96 127.04L151.24 40L155.84 32H146.6H146.72ZM32.32 8H123.6L109.76 32H46.2L32.36 8H32.32ZM59.48 119.04L13.84 40H41.56L73.36 95.04L59.52 119.04H59.48ZM50.8 40H105.12L77.96 87.04L50.8 40ZM96.44 119.04L82.6 95.04L114.4 40H142.12L96.48 119.04H96.44Z" fill="white"/>
         </svg>
-        <span>VIBRANIUM</span>
-        <span style="color:#606A6F">.VC</span>
+        <span class="d-none d-md-inline-block">
+          <span>VIBRANIUM</span>
+          <span style="color:#606A6F">.VC</span>
+        </span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler mobile-menu-open text-light border-0">
+        Menu
       </button>
+
+      <div class="mobile-menu" style="display: none;">
+        <div class="mobile-menu-brand d-flex align-items-center justify-content-between mx-4" style="height:80px">
+          <a href="#">
+            <svg width="40" height="34" viewBox="0 0 156 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M146.72 16H9.24023L13.8402 24L73.3602 127.08L77.9602 135.08L82.5602 127.08L142.12 24L146.72 16ZM77.9602 119.08L23.0802 24H132.88L78.0002 119.08H77.9602Z" fill="white"/>
+              <path d="M146.72 32H119L132.84 8L137.44 0H18.48L36.96 32H0L54.88 127.04L59.48 135.04L64.08 127.04L77.92 103.04L91.76 127.04L96.36 135.04L100.96 127.04L151.24 40L155.84 32H146.6H146.72ZM32.32 8H123.6L109.76 32H46.2L32.36 8H32.32ZM59.48 119.04L13.84 40H41.56L73.36 95.04L59.52 119.04H59.48ZM50.8 40H105.12L77.96 87.04L50.8 40ZM96.44 119.04L82.6 95.04L114.4 40H142.12L96.48 119.04H96.44Z" fill="white"/>
+            </svg>
+          </a>
+          <span class="mobile-menu-close h4 m-0">
+            Close
+          </span>
+        </div>
+
+        <div class="m-4">
+          <div style="border-bottom: 2px solid white;">
+            <div class="mb-4">
+              <a class="h2" href="#">About</a>
+            </div>
+            <div class="mb-4">
+              <a class="h2" href="#">Approach</a>
+            </div>
+            <div class="mb-4">
+              <a class="h2" href="#">Portfolio</a>
+            </div>
+            <div class="mb-4">
+              <a class="h2" href="#">News</a>
+            </div>
+            <div class="mb-40">
+              <a class="h2" href="#">Apply</a>
+            </div>
+          </div>
+          <div class="mobile-menu-footer mt-40">
+            <div class="mb-2">
+              <a class="p2" href="#">Twitter</a>
+            </div>
+            <div class="mb-2">
+              <a class="p2" href="#">Telegram</a>
+            </div>
+            <div class="mb-2">
+              <a class="p2" href="#">Facebook</a>
+            </div>
+            <div class="mb-2">
+              <a class="p2" href="#">Linkedin</a>
+            </div>
+            <div class="">
+              <a class="p2" href="#">Medium</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -418,6 +308,7 @@
 
   <!-- Venture Hacks -->
   <div class="container-xxl mt-5 pb-5">
+
     <div class="row">
       <div class="col-12">
         <div class="d-flex justify-content-between mb-5 pb-0 pb-md-5 ">
@@ -433,7 +324,7 @@
 
     <div class="venture-hacks-carusel-container">
 
-      <div style="position: relative;">
+      <div class="venture-hacks-carusel-arrows" style="position: relative;">
         <div class="carusel-button carusel-button-left">
           <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.7">
@@ -454,19 +345,59 @@
         </div>
       </div>
 
-      <div class="venture-hacks-carusel d-flex flex-row flex-nowrap overflow-auto m-0">
-        <?php for ($i=0; $i < 12; $i++) : ?>
-          <div class="venture-hacks-card card mr-40 p-40" style="min-width: 400px; min-height: 500px;">
-            <div class="card-body">
-              <h4 class="card-title">How to Turn a YouTube Channel into a EdTech Startup in 6 Months</h4>
-              <p class="card-text">Founder & CEO of iSchoolConnect talks about launching an EdTech company.</p>
+      <div class="venture-hacks-carusel d-md-flex flex-row flex-nowrap overflow-auto m-0">
+
+        <div class="venture-hacks-card card mr-40 mb-3 p-40" style="background-image: url('img/news/6-steps.png');">
+          <div class="card-body p-0 text-light">
+            <h4 class="card-title">6 Steps to Raising Startup Funding</h4>
+            <p class="card-text">Finding a venture capital partner might be one of the most exciting and challenging tasks for a company. </p>
+          </div>
+        </div>
+
+        <div class="venture-hacks-card card mr-40 mb-3 p-40" style="background-color: #BCC3C7;">
+          <div class="card-body p-0">
+            <h4 class="card-title" style="line-height: 100%;">How to Turn a YouTube Channel into a EdTech Startup in 6 Months</h4>
+            <p class="card-text">Founder & CEO of iSchoolConnect talks about launching an EdTech company.</p>
+            <div class="d-flex justify-content-center">
+              <img src="img/news/🦄.png" alt="">
             </div>
           </div>
-        <?php endfor ?>
+        </div>
+
+        <div class="venture-hacks-card card mr-40 mb-3 p-40" style="background-color: black;">
+          <div class="card-body p-0 text-light">
+            <h4 class="card-title">20+ Entrepreneurs Reveal the Traits That Drive Success</h4>
+            <p class="card-text">Read on to learn more about the traits that make a successful entrepreneur</p>
+            <div class="d-flex justify-content-center">
+              <!-- <img src="img/news/20+ent.png" alt=""> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="venture-hacks-card card mr-40 mb-3 p-40" style="background-image: url('img/news/team-matters.png');">
+          <div class="card-body p-0 text-light">
+            <h4 class="card-title">Team matters. NO. The Team is Absolutely Vital</h4>
+            <p class="card-text"></p>
+          </div>
+        </div>
+
+        <div class="venture-hacks-card card mr-40 mb-3 p-40" style="background-image: url('img/news/the-age-of-success.png');">
+          <div class="card-body p-0 text-light">
+            <h4 class="card-title">The Age of Success</h4>
+            <p class="card-text">Founder & CEO of iSchoolConnect talks about launching an EdTech company. </p>
+          </div>
+        </div>
+
+        <div class="venture-hacks-card card mr-40 mb-3 p-40" style="background-image: url('img/news/from-a-youtuber.png');">
+          <div class="card-body p-0 text-light">
+            <h4 class="card-title">From a YouTube Channel To a Successful EdTech Startup in 6 Months</h4>
+            <p class="card-text"></p>
+          </div>
+        </div>
+
       </div>
 
     </div>
-
   </div>
 
 
@@ -554,28 +485,6 @@
   </footer>
 
 
+  <script src="script.js"></script>
 </body>
-
-
-<script>
-  $(window).scroll(function(){
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
-  });
-
-  $('.venture-hacks-carusel-container .carusel-button-left').click(function() {
-    event.preventDefault();
-    $('.venture-hacks-carusel').animate({
-      scrollLeft: "-=775px"
-    }, "slow");
-  });
-
- $('.venture-hacks-carusel-container .carusel-button-right').click(function() {
-    event.preventDefault();
-    $('.venture-hacks-carusel').animate({
-      scrollLeft: "+=775px"
-    }, "slow");
-  });
-
-</script>
-
 </html>

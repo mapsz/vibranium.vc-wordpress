@@ -1,0 +1,209 @@
+
+@font-face {
+  font-family: "ABC Favorit Regular";
+  src: url(fonts/ABCFavoritPro-Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "ABC Favorit Medium";
+  src: url(fonts/ABCFavoritPro-Medium.otf) format("truetype");
+}
+body{
+  font-family: 'ABC Favorit Regular';
+  font-size: 18px;
+  line-height: 140%;
+  margin:0px;
+}
+h1{
+  font-family: 'ABC Favorit Medium' !important;
+  font-size: 64px;
+  line-height: 95%;
+}
+h2, .h2{
+  font-family: 'ABC Favorit Medium' !important;
+  font-size: 48px;
+  line-height: 95%;
+}
+h3{
+  font-family: 'ABC Favorit Medium' !important;
+  font-size: 32px;
+  line-height: 100%;
+}
+h4{
+  font-family: 'ABC Favorit Medium' !important;
+  font-size: 18px;
+  line-height: 120%;
+}
+p{
+  margin:0px;
+}
+.p2{
+  font-size: 14px;
+  line-height: 140%;
+}
+@media (min-width: 768px) {
+  body{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 96px;
+  }
+  h2, .h2{
+    font-size: 64px;
+  }
+  h3{
+    font-size: 48px;
+    line-height: 95%;
+  }
+  h4{
+    font-size: 32px;
+    line-height: 100%;
+  }
+}
+a{
+  color:black;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.main-color{
+  background-color: #2A4E5F !important;
+}
+.navbar {
+  background-color: transparent !important;
+  height: 80px;
+  color: white;
+}
+.navbar-brand, .nav-link {
+  font-size: 18px !important;
+  color: white;
+}
+.navbar.scrolled{
+  background-color: black !important;
+}
+@media (max-width: 767px) {
+  .navbar-collapse{
+    background-color: black !important;
+    padding: 15px;
+    text-align: right;
+  }
+}
+
+.btn{
+  border-radius: 50px;
+}
+
+.welcome{
+  padding-top: 80px !important;
+}
+
+.p-40{
+  padding:40px;
+}
+.my-40{
+  margin-top:40px;
+  margin-bottom:40px;
+}
+.mr-40{
+  margin-right:40px;
+}
+.mt-40{
+  margin-top:40px;
+}
+.mb-40{
+  margin-bottom:40px;
+}
+
+@media (min-width: 768px) {
+  .program-online-free-container .inner-container{
+    max-width: 660px;
+    font-size: 27px;
+    margin-left: 15%;
+  }
+}
+.program-online-free-container .inner-container{
+  line-height: 140%;
+}
+
+.navbar-skip{
+  padding-top:80px;
+}
+
+.main-container .inner-container{
+  height: 100vh;
+  background-image: url('img/main-mobile.png');
+  background-color: #2A4E5F;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-container .inner-container{
+    background-image: url('img/main-desktop.png');
+  }
+  .main-container .main-text{
+    line-height: 95%;
+    max-width: 436px;
+    margin-left: 15%;
+  }
+}
+
+.venture-hacks-card {
+  min-width: 100%;
+  height: 420px;
+}
+.venture-hacks-card h4 {
+  font-size: 32px !important;
+}
+
+@media (min-width: 768px) {
+  .venture-hacks-card:first-child {
+    margin-left: 160px !important;
+  }
+  .venture-hacks-card {
+    min-width: 400px;
+    height: 500px;
+  }
+}
+.venture-hacks-carusel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.venture-hacks-carusel::-webkit-scrollbar{
+  display: none;
+}
+
+.venture-hacks-carusel-arrows {
+  display: none;
+}
+@media (min-width: 768px) {
+  .venture-hacks-carusel-arrows {
+    display: block;
+  }
+}
+
+.carusel-button{
+  position: absolute;
+  top: 220px;
+  cursor: pointer;
+  z-index: 10;
+}
+.carusel-button-right{
+  right: 0px;
+}
+
+.mobile-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-menu a{
+  color: white !important;
+}
