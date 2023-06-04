@@ -158,23 +158,36 @@ a:hover{
 
 .main-container .inner-container{
   height: 100vh;
-  background-image: url('img/main-mobile.png');
-  background-color: #2A4E5F;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
   font-weight: 500;
   line-height: 100%;
 }
 
+.solftlanding-main-container .inner-container {
+  background-image: url('img/softlanding-main-mobile.png');
+  background-color: #040615;
+  background-position: bottom;
+}
+
+.homepage-main-container .inner-container {
+  background-image: url('img/main-mobile.png');
+  background-color: #2A4E5F;
+  background-position: top;
+}
+
 @media (min-width: 768px) {
-  .main-container .inner-container{
-    background-image: url('img/main-desktop.png');
-  }
   .main-container .main-text{
     line-height: 95%;
     max-width: 436px;
     margin-left: 15%;
+  }
+  .solftlanding-main-container .inner-container {
+    background-image: url('img/softlanding-main-desktop.png');
+  }
+
+  .homepage-main-container .inner-container {
+    background-image: url('img/main-desktop.png');
   }
 }
 
