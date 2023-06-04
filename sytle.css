@@ -66,28 +66,6 @@ a{
 a:hover{
   text-decoration: underline;
 }
-.main-color{
-  background-color: #2A4E5F !important;
-}
-.navbar {
-  background-color: transparent !important;
-  height: 80px;
-  color: white;
-}
-.navbar-brand, .nav-link {
-  font-size: 18px !important;
-  color: white;
-}
-.navbar.scrolled{
-  background-color: black !important;
-}
-@media (max-width: 767px) {
-  .navbar-collapse{
-    background-color: black !important;
-    padding: 15px;
-    text-align: right;
-  }
-}
 
 .btn{
   border-radius: 50px;
@@ -112,6 +90,51 @@ a:hover{
 }
 .mb-40{
   margin-bottom:40px;
+}
+.main-color{
+  background-color: #2A4E5F !important;
+}
+
+/* Navbar */
+.navbar {
+  background-color: transparent !important;
+  height: 80px;
+  color: white;
+}
+.navbar-brand, .nav-link {
+  font-size: 18px !important;
+  color: white;
+}
+.navbar-brand path{
+  fill: white;
+}
+.navbar.scrolled{
+  background-color: black !important;
+}
+.navbar.scrolled a{
+  color: white !important;
+  border-color: white;
+}
+.navbar.scrolled path{
+  fill: white !important;
+}
+@media (max-width: 767px) {
+  .navbar-collapse{
+    background-color: black !important;
+    padding: 15px;
+    text-align: right;
+  }
+}
+.navbar-dark a {
+  color: black;
+  border-color: black;
+}
+.navbar-dark path {
+  fill: black !important;
+}
+.navbar-dark a:hover {
+  color: #3e3e3e;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
